@@ -1,18 +1,32 @@
 class PrimeChecker
   def self.prime?(num)
-    arr = (2..num-1).to_a
-    i = 0
-    if num % arr[i] == 0
-      puts "false"
-    elsif num % num-1 != 0
-    puts "true"
-    else i += 1
-      num % arr[i]
-    return
+    (2..num-1).each do |i|
+      if num % i == 0
+        return false
+      end
     end
-  end
+    return true
+  end 
   puts self.prime?(101)
 end
+
+
+
+# class PrimeChecker
+  # def self.prime?(num)
+    # arr = (2..num-1).to_a
+    # i = 0
+    # if num % arr[i] == 0
+      # puts "false"
+    # elsif num % num-1 != 0
+    # puts "true"
+    # else i += 1
+      # num % arr[i]
+    # return
+    # end
+  # end
+  # puts self.prime?(101)
+# end
 
 
 

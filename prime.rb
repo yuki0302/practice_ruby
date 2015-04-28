@@ -6,7 +6,7 @@ class PrimeChecker
       puts "false"
     elsif num % num-1 != 0
     puts "true"
-    elsif i << + 1
+    else i << + 1
       num % arr[i]
     return
     end

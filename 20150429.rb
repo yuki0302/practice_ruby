@@ -8,5 +8,10 @@ class Extracter
     v = value.first(3)
     Hash[idx.zip(v).each { |k,v| [k,v] }]
   end
-  puts self.print_idx_and_value([10, 1, 2, 5, 99, 0, 3])
+  # 問1
++ puts self.print_idx_and_value([10, 1, 2, 5, 99, 0, 3])
++ # 問2
++ puts self.print_idx_and_value([1, 2, 3, 4, 5])
++ # 問3
++ puts self.print_idx_and_value([5, 4, 3, 2, 1])
 end
